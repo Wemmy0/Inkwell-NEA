@@ -1,0 +1,1161 @@
+<mxfile host="app.diagrams.net" modified="2023-11-14T13:29:22.234Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="49dCkq8MWrgc-eovovJg" version="22.1.0" type="device" pages="7">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Main">
+    <mxGraphModel dx="882" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-23" value="sync.do()" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="429" y="10" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-24" value="Is database connected?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="429" y="70" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LxNKTDL8sy5jLNu8bbk0-23" target="LxNKTDL8sy5jLNu8bbk0-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-26" value="Exit with non-zero error code" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="299" y="95" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LxNKTDL8sy5jLNu8bbk0-24" target="LxNKTDL8sy5jLNu8bbk0-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-28" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LxNKTDL8sy5jLNu8bbk0-27" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wDQKlk_wL-ZprZZkc6_l-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LxNKTDL8sy5jLNu8bbk0-29" target="wDQKlk_wL-ZprZZkc6_l-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dbfUEGTbB6_fZnf_g5f6-5" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="wDQKlk_wL-ZprZZkc6_l-13" vertex="1" connectable="0">
+          <mxGeometry x="0.05" y="2" relative="1" as="geometry">
+            <mxPoint x="9" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-29" value="Does sync path exist?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="429" y="200" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LxNKTDL8sy5jLNu8bbk0-24" target="LxNKTDL8sy5jLNu8bbk0-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-31" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LxNKTDL8sy5jLNu8bbk0-30" vertex="1" connectable="0">
+          <mxGeometry x="-0.4615" relative="1" as="geometry">
+            <mxPoint x="10" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="embFFBwD4eDANs_He1vz-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LxNKTDL8sy5jLNu8bbk0-32" target="wDQKlk_wL-ZprZZkc6_l-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-32" value="Create path" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="293" y="220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LxNKTDL8sy5jLNu8bbk0-29" target="LxNKTDL8sy5jLNu8bbk0-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LxNKTDL8sy5jLNu8bbk0-34" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LxNKTDL8sy5jLNu8bbk0-33" vertex="1" connectable="0">
+          <mxGeometry x="-0.3128" y="-1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vXdakemz1ErQrb1N-JYc-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wDQKlk_wL-ZprZZkc6_l-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="479" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wDQKlk_wL-ZprZZkc6_l-12" value="Scan folder of path" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="429" y="340" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="embFFBwD4eDANs_He1vz-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="embFFBwD4eDANs_He1vz-1" target="embFFBwD4eDANs_He1vz-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="embFFBwD4eDANs_He1vz-1" value="SELECT filename FROM username" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="426.75" y="540" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="embFFBwD4eDANs_He1vz-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="embFFBwD4eDANs_He1vz-3" target="embFFBwD4eDANs_He1vz-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="embFFBwD4eDANs_He1vz-3" value="&lt;div&gt;Store all filepaths in new list called&lt;/div&gt;&lt;div&gt;db_files&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="406.25" y="630" width="141" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="embFFBwD4eDANs_He1vz-5" value="&lt;div&gt;Get next item in db_files and store in&lt;/div&gt;&lt;div&gt;current_db_file&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="416.25" y="720" width="121" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dbfUEGTbB6_fZnf_g5f6-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vXdakemz1ErQrb1N-JYc-0" target="vXdakemz1ErQrb1N-JYc-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dbfUEGTbB6_fZnf_g5f6-3" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="dbfUEGTbB6_fZnf_g5f6-0" vertex="1" connectable="0">
+          <mxGeometry x="-0.4" y="-3" relative="1" as="geometry">
+            <mxPoint x="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vXdakemz1ErQrb1N-JYc-0" value="Is current_db_file in local_files" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="426.75" y="810" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vXdakemz1ErQrb1N-JYc-1" value="&lt;div&gt;Store return value in new list&lt;/div&gt;&lt;div&gt;local_files&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="411.75" y="450" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vXdakemz1ErQrb1N-JYc-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vXdakemz1ErQrb1N-JYc-1" target="embFFBwD4eDANs_He1vz-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vXdakemz1ErQrb1N-JYc-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="embFFBwD4eDANs_He1vz-5" target="vXdakemz1ErQrb1N-JYc-0" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vXdakemz1ErQrb1N-JYc-5" value="Compare_File(current_db_file)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="426.75" y="950" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dbfUEGTbB6_fZnf_g5f6-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vXdakemz1ErQrb1N-JYc-0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dbfUEGTbB6_fZnf_g5f6-2" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="dbfUEGTbB6_fZnf_g5f6-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.2406" y="1" relative="1" as="geometry">
+            <mxPoint x="-2" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dbfUEGTbB6_fZnf_g5f6-6" value="Download_File(current_db_dile)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="280" y="830" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dbfUEGTbB6_fZnf_g5f6-12" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dbfUEGTbB6_fZnf_g5f6-7" target="embFFBwD4eDANs_He1vz-5" edge="1">
+          <mxGeometry x="-0.9398" y="19" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="1119" />
+              <mxPoint x="560" y="750" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dbfUEGTbB6_fZnf_g5f6-7" target="kpqIabWQ7MJDx4wG107S-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dbfUEGTbB6_fZnf_g5f6-7" value="&lt;div&gt;Is current_db_file&lt;/div&gt;&lt;div&gt;the last item in&lt;/div&gt;&lt;div&gt;db_files&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="426.75" y="1069" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dbfUEGTbB6_fZnf_g5f6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vXdakemz1ErQrb1N-JYc-5" target="dbfUEGTbB6_fZnf_g5f6-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dbfUEGTbB6_fZnf_g5f6-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dbfUEGTbB6_fZnf_g5f6-6" target="dbfUEGTbB6_fZnf_g5f6-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-3" value="Exit with zero exit code" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="393" y="2010" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kpqIabWQ7MJDx4wG107S-5" target="kpqIabWQ7MJDx4wG107S-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="466" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-5" value="Convert db_files to a set" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="426.75" y="1220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-6" value="Convert local_files to a set" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="416.25" y="1330" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-10" value="Create new variable called new_files" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="406.25" y="1440" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.593;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kpqIabWQ7MJDx4wG107S-6" target="kpqIabWQ7MJDx4wG107S-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kpqIabWQ7MJDx4wG107S-12" target="kpqIabWQ7MJDx4wG107S-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="443" y="1600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-12" value="local_files - db_files and store result in new_files" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="399" y="1540" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.625;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kpqIabWQ7MJDx4wG107S-10" target="kpqIabWQ7MJDx4wG107S-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kpqIabWQ7MJDx4wG107S-14" target="kpqIabWQ7MJDx4wG107S-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-14" value="Get next item from new_files and store in current_file" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="393" y="1640" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-16" value="Upload file(current_file)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="393" y="1740" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-22" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="230" y="60" width="50" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-25" value="&lt;h1&gt;Preparation&lt;/h1&gt;&lt;div&gt;Connect to the database,&lt;/div&gt;&lt;div&gt;Scan the path to get all files and files in sub-folders,&lt;/div&gt;Get all files stored in the database&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="325" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-26" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="230" y="720" width="50" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-27" value="&lt;h1&gt;Downloading &amp;amp; Comparing Files&lt;br&gt;&lt;/h1&gt;&lt;p&gt;For loop which loops through every file stored in the database. &lt;br&gt;&lt;/p&gt;&lt;p&gt;If a file is only exists in the database, it&#39;s simply downloaded.&lt;/p&gt;&lt;p&gt;If a file exists in both the database and locally, then they are compared on multiple factors (see compare function)&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="790" width="190" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-28" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="230" y="1200" width="50" height="780" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-29" value="&lt;h1&gt;Find files that are stored locally but not in the database&lt;br&gt;&lt;/h1&gt;&lt;p&gt;List of db_files and local_files are converted to sets. This allows them to be subtracted to find files that are in local_files but not in db_files quickly. These are looped through using a for loop and uploaded&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="1460" width="190" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kpqIabWQ7MJDx4wG107S-30" target="kpqIabWQ7MJDx4wG107S-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="1920" />
+              <mxPoint x="540" y="1670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-33" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kpqIabWQ7MJDx4wG107S-32" vertex="1" connectable="0">
+          <mxGeometry x="-0.8731" y="-3" relative="1" as="geometry">
+            <mxPoint x="1" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kpqIabWQ7MJDx4wG107S-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="443" y="2010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-35" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kpqIabWQ7MJDx4wG107S-34" vertex="1" connectable="0">
+          <mxGeometry x="-0.1111" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-30" value="Is current_file the last file in new_files" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="393" y="1870" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kpqIabWQ7MJDx4wG107S-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kpqIabWQ7MJDx4wG107S-16" target="kpqIabWQ7MJDx4wG107S-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="KonCliAG_XEQTQLzB4f6" name="Compare">
+    <mxGraphModel dx="1709" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xREJoxH9hoExlso-0Qc--1" value="Compare_File(file)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="350" y="20" width="106" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xREJoxH9hoExlso-0Qc--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xREJoxH9hoExlso-0Qc--2" target="xREJoxH9hoExlso-0Qc--4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xREJoxH9hoExlso-0Qc--2" value="&lt;div&gt;DATABASE:&lt;/div&gt;&lt;div&gt;SELECT hash FROM test WHERE filename = {file}&#39;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="338" y="100" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xREJoxH9hoExlso-0Qc--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xREJoxH9hoExlso-0Qc--1" target="xREJoxH9hoExlso-0Qc--2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xREJoxH9hoExlso-0Qc--4" value="Store result in db_hash" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="348" y="200" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xREJoxH9hoExlso-0Qc--11" value="Store returned value in local_hash" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="348" y="390" width="102" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xREJoxH9hoExlso-0Qc--12" value="Is local_hash == db_hash" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="350" y="490" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="xREJoxH9hoExlso-0Qc--13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xREJoxH9hoExlso-0Qc--11" target="xREJoxH9hoExlso-0Qc--12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="399" y="480" />
+              <mxPoint x="400" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xREJoxH9hoExlso-0Qc--19" value="&lt;div&gt;DATABASE: SELECT modified FROM test WHERE filename = {file}&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="230" y="630" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xREJoxH9hoExlso-0Qc--20" value="Finish" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="253" y="1080" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d2ItmqLMZDi0vt6sS2vl-1" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="80" width="130" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="d2ItmqLMZDi0vt6sS2vl-2" value="&lt;h1&gt;First check: Hash&lt;/h1&gt;&lt;div&gt;Retrieve the hash from the database and calculate the hash from the local file. If the files are identical, skip that file.&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="250" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="d2ItmqLMZDi0vt6sS2vl-3" value="Calculate hash from local file" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="353" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d2ItmqLMZDi0vt6sS2vl-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.578;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="d2ItmqLMZDi0vt6sS2vl-3" target="xREJoxH9hoExlso-0Qc--11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="407" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2ItmqLMZDi0vt6sS2vl-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xREJoxH9hoExlso-0Qc--4" target="d2ItmqLMZDi0vt6sS2vl-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.436;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xREJoxH9hoExlso-0Qc--12" target="xREJoxH9hoExlso-0Qc--19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-2" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5mObTrZxvtUK6tHWjKXp-1" vertex="1" connectable="0">
+          <mxGeometry x="0.4265" y="2" relative="1" as="geometry">
+            <mxPoint x="17" y="-38" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-3" value="Get time last modified from local file" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="250" y="740" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xREJoxH9hoExlso-0Qc--19" target="5mObTrZxvtUK6tHWjKXp-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5mObTrZxvtUK6tHWjKXp-5" target="5mObTrZxvtUK6tHWjKXp-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-14" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5mObTrZxvtUK6tHWjKXp-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.6" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-5" value="Is local file hash &amp;gt; db file hash?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="250" y="840" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="5mObTrZxvtUK6tHWjKXp-3" target="5mObTrZxvtUK6tHWjKXp-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-8" value="update_file(time, hash, binary, file)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="130" y="960" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="5mObTrZxvtUK6tHWjKXp-8" target="xREJoxH9hoExlso-0Qc--20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-11" value="download_file(file)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="368" y="960" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="5mObTrZxvtUK6tHWjKXp-11" target="xREJoxH9hoExlso-0Qc--20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-16" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="610" width="130" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-18" value="&lt;h1&gt;Final Check and Decision&lt;br&gt;&lt;/h1&gt;Last modified timestamps from the local file and the DB file are compared. Depending on what&#39;s newer, the file is either updated - uploading the local file to the DB overwriting the old or downloaded overwriting the local file." style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="810" width="190" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="5mObTrZxvtUK6tHWjKXp-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xREJoxH9hoExlso-0Qc--12" target="xREJoxH9hoExlso-0Qc--20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="540" />
+              <mxPoint x="510" y="1150" />
+              <mxPoint x="303" y="1150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="JSWpdRI4ZFGYBcIDf-Ox" name="Scan Folder">
+    <mxGraphModel dx="882" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RCS9QJP7vcPbfUX451gS-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="RCS9QJP7vcPbfUX451gS-1" target="RCS9QJP7vcPbfUX451gS-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-1" value="Get a list of all sub-folders and paths" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="380" y="170" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="RCS9QJP7vcPbfUX451gS-2" target="RCS9QJP7vcPbfUX451gS-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-14" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="RCS9QJP7vcPbfUX451gS-13" vertex="1" connectable="0">
+          <mxGeometry x="-0.15" y="2" relative="1" as="geometry">
+            <mxPoint x="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RCS9QJP7vcPbfUX451gS-2" target="RCS9QJP7vcPbfUX451gS-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-29" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="RCS9QJP7vcPbfUX451gS-28" vertex="1" connectable="0">
+          <mxGeometry x="0.16" y="-2" relative="1" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-2" value="Is currentFile a folder?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="380" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-3" value="Create new local variable list called out" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="369.5" y="80" width="141" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="RCS9QJP7vcPbfUX451gS-3" target="RCS9QJP7vcPbfUX451gS-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-5" value="Set currentFile to the next file" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="385" y="265" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="RCS9QJP7vcPbfUX451gS-5" target="RCS9QJP7vcPbfUX451gS-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="RCS9QJP7vcPbfUX451gS-7" target="RCS9QJP7vcPbfUX451gS-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-7" value="Scan folder" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="390" y="10" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RCS9QJP7vcPbfUX451gS-9" target="RCS9QJP7vcPbfUX451gS-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="650" />
+              <mxPoint x="520" y="300" />
+              <mxPoint x="474" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-23" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="RCS9QJP7vcPbfUX451gS-20" vertex="1" connectable="0">
+          <mxGeometry x="-0.9094" y="1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="RCS9QJP7vcPbfUX451gS-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zDUDngkcDKV4RmGZN4Hy-2" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="RCS9QJP7vcPbfUX451gS-25" vertex="1" connectable="0">
+          <mxGeometry x="-0.2594" relative="1" as="geometry">
+            <mxPoint x="-16" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-9" value="Is currentFile the last file?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="380" y="600" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-12" value="Append path of current file to out" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="380" y="500" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="RCS9QJP7vcPbfUX451gS-12" target="RCS9QJP7vcPbfUX451gS-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="RCS9QJP7vcPbfUX451gS-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="440" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-27" value="Scan folder" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="230" y="380" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-30" value="Add all items in returned list to out" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="210" y="510" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RCS9QJP7vcPbfUX451gS-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="RCS9QJP7vcPbfUX451gS-30" target="RCS9QJP7vcPbfUX451gS-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDUDngkcDKV4RmGZN4Hy-1" value="Return out" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="380" y="740" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="a2z5280b-Fzlm_eINU4K" name="Download">
+    <mxGraphModel dx="882" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="45sbbkpeAd2s8ck8CKL1-1" value="Download_File(file)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="340" y="20" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="29DXBNSs7f2S6BDf_u0V-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="45sbbkpeAd2s8ck8CKL1-1" target="45sbbkpeAd2s8ck8CKL1-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Zt-i7WTFxDp_DDrQpoz-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3Zt-i7WTFxDp_DDrQpoz-2" target="3Zt-i7WTFxDp_DDrQpoz-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Zt-i7WTFxDp_DDrQpoz-2" value="&lt;div&gt;DATABASE:&lt;/div&gt;&lt;div&gt;SELECT content FROM test WHERE filename = {file}&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="310" y="100" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Zt-i7WTFxDp_DDrQpoz-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="45sbbkpeAd2s8ck8CKL1-1" target="3Zt-i7WTFxDp_DDrQpoz-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Zt-i7WTFxDp_DDrQpoz-4" value="Store binary database result in content" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="330" y="200" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Zt-i7WTFxDp_DDrQpoz-6" value="Create new empty file with correct path" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="480" y="380" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Zt-i7WTFxDp_DDrQpoz-8" value="Open newly created file and write binary data stored in content" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="345" y="470" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qlohI-TdJv-GgEv9NnQf-1" value="Does file exist in path?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="345" y="300" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qlohI-TdJv-GgEv9NnQf-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="3Zt-i7WTFxDp_DDrQpoz-4" target="qlohI-TdJv-GgEv9NnQf-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qlohI-TdJv-GgEv9NnQf-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="qlohI-TdJv-GgEv9NnQf-1" target="3Zt-i7WTFxDp_DDrQpoz-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qlohI-TdJv-GgEv9NnQf-4" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qlohI-TdJv-GgEv9NnQf-3" vertex="1" connectable="0">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qlohI-TdJv-GgEv9NnQf-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="3Zt-i7WTFxDp_DDrQpoz-6" target="3Zt-i7WTFxDp_DDrQpoz-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qlohI-TdJv-GgEv9NnQf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="qlohI-TdJv-GgEv9NnQf-1" target="3Zt-i7WTFxDp_DDrQpoz-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qlohI-TdJv-GgEv9NnQf-9" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qlohI-TdJv-GgEv9NnQf-8" vertex="1" connectable="0">
+          <mxGeometry x="0.125" y="2" relative="1" as="geometry">
+            <mxPoint x="-22" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="YfuGacTajNvY0Ck9t7-G" name="Update">
+    <mxGraphModel dx="882" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LBMuU0vwxoLn1pKz4L9W-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="kAj_4ZMfeaHuWQst88zf-1" target="kAj_4ZMfeaHuWQst88zf-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kAj_4ZMfeaHuWQst88zf-1" value="Start(time, hash, binary, file)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="390" y="20" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kAj_4ZMfeaHuWQst88zf-2" value="&lt;div&gt;DATABASE:&lt;/div&gt;UPDATE user SET modified = {time}, hash = {hash}, content = {binary}, WHERE filename = {file}" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="345" y="110" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9359IOWkf7rWeYsJAiWY-1" value="Finish" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="405" y="240" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9359IOWkf7rWeYsJAiWY-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="kAj_4ZMfeaHuWQst88zf-2" target="9359IOWkf7rWeYsJAiWY-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o7d8ou0a8raTvAV-YMoa-1" value="&lt;h1&gt;Updates an existing file in the DB&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Updates the file content in binary form, whilst updating the time modified, and hash&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="110" y="80" width="190" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ZSJFhCL6Q6ujvdeum5bo" name="Upload">
+    <mxGraphModel dx="882" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NYHCEfuBzADOYOT6-prv-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="NYHCEfuBzADOYOT6-prv-1" target="NYHCEfuBzADOYOT6-prv-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NYHCEfuBzADOYOT6-prv-1" value="Upload(file)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="360" y="10" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NYHCEfuBzADOYOT6-prv-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="NYHCEfuBzADOYOT6-prv-2" target="NYHCEfuBzADOYOT6-prv-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NYHCEfuBzADOYOT6-prv-2" value="Get time modified from file" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="355" y="90" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="NYHCEfuBzADOYOT6-prv-5" target="ihyoNb0Q8h_VL1nQRazf-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NYHCEfuBzADOYOT6-prv-5" value="Store time modified in var timestamp" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="347.5" y="190" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ihyoNb0Q8h_VL1nQRazf-1" target="ihyoNb0Q8h_VL1nQRazf-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-1" value="Calculate MD5 hash of file" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="355" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-3" value="Store hash in var fileHash" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="355" y="400" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ihyoNb0Q8h_VL1nQRazf-5" target="ihyoNb0Q8h_VL1nQRazf-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-5" value="Get binary content for file" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="355" y="510" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ihyoNb0Q8h_VL1nQRazf-3" target="ihyoNb0Q8h_VL1nQRazf-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-8" value="&lt;div&gt;DATABASE:&lt;br&gt;&lt;/div&gt;&lt;div&gt;INSERT INTO test value(&#39;file&#39;, &#39;timestamp&#39;, &#39;fileHash&#39;, &#39;content&#39;&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="320" y="720" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ihyoNb0Q8h_VL1nQRazf-9" target="ihyoNb0Q8h_VL1nQRazf-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-9" value="Store binary data in var content" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="355" y="610" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ihyoNb0Q8h_VL1nQRazf-12" value="&lt;h1&gt;Uploads a new file to the db&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Very similar to the update function but it adds to the database rather than replacing&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="130" y="390" width="190" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Xa_35Jan8vBkcmq4oNJx" name="Combined">
+    <mxGraphModel dx="1260" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-1" value="sync.do()" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="429" y="10" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-2" value="Is database connected?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="429" y="70" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-1" target="WqSGr3Pnkwq3vMVcLPh8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-4" value="Exit with non-zero error code" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="299" y="95" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-2" target="WqSGr3Pnkwq3vMVcLPh8-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-6" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WqSGr3Pnkwq3vMVcLPh8-5">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-9" target="WqSGr3Pnkwq3vMVcLPh8-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-8" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WqSGr3Pnkwq3vMVcLPh8-7">
+          <mxGeometry x="0.05" y="2" relative="1" as="geometry">
+            <mxPoint x="9" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-9" value="Does sync path exist?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="429" y="200" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-2" target="WqSGr3Pnkwq3vMVcLPh8-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-11" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WqSGr3Pnkwq3vMVcLPh8-10">
+          <mxGeometry x="-0.4615" relative="1" as="geometry">
+            <mxPoint x="10" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-13" target="WqSGr3Pnkwq3vMVcLPh8-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-13" value="Create path" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="293" y="220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-9" target="WqSGr3Pnkwq3vMVcLPh8-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-15" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WqSGr3Pnkwq3vMVcLPh8-14">
+          <mxGeometry x="-0.3128" y="-1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="479" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-17" value="Scan folder of path" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="429" y="340" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-19" target="WqSGr3Pnkwq3vMVcLPh8-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-19" value="SELECT filename FROM username" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="426.75" y="540" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-21" target="WqSGr3Pnkwq3vMVcLPh8-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-21" value="&lt;div&gt;Store all filepaths in new list called&lt;/div&gt;&lt;div&gt;db_files&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="406.25" y="630" width="141" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-22" value="&lt;div&gt;Get next item in db_files and store in&lt;/div&gt;&lt;div&gt;current_db_file&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="416.25" y="720" width="121" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-25" target="WqSGr3Pnkwq3vMVcLPh8-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-24" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WqSGr3Pnkwq3vMVcLPh8-23">
+          <mxGeometry x="-0.4" y="-3" relative="1" as="geometry">
+            <mxPoint x="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-25" value="Is current_db_file in local_files" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="426.75" y="810" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-26" value="&lt;div&gt;Store return value in new list&lt;/div&gt;&lt;div&gt;local_files&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="411.75" y="450" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-26" target="WqSGr3Pnkwq3vMVcLPh8-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-22" target="WqSGr3Pnkwq3vMVcLPh8-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-29" value="Compare_File(current_db_file)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="426.75" y="950" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-31" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WqSGr3Pnkwq3vMVcLPh8-30">
+          <mxGeometry x="-0.2406" y="1" relative="1" as="geometry">
+            <mxPoint x="-2" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-32" value="Download_File(current_db_dile)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="830" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-33" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-35" target="WqSGr3Pnkwq3vMVcLPh8-22">
+          <mxGeometry x="-0.9398" y="19" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="1119" />
+              <mxPoint x="560" y="750" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-35" target="WqSGr3Pnkwq3vMVcLPh8-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-35" value="&lt;div&gt;Is current_db_file&lt;/div&gt;&lt;div&gt;the last item in&lt;/div&gt;&lt;div&gt;db_files&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="426.75" y="1069" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-29" target="WqSGr3Pnkwq3vMVcLPh8-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-32" target="WqSGr3Pnkwq3vMVcLPh8-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-38" value="Exit with zero exit code" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="393" y="2010" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-40" target="WqSGr3Pnkwq3vMVcLPh8-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="466" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-40" value="Convert db_files to a set" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="426.75" y="1220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-41" value="Convert local_files to a set" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="416.25" y="1330" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-42" value="Create new variable called new_files" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="406.25" y="1440" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.593;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-41" target="WqSGr3Pnkwq3vMVcLPh8-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-45" target="WqSGr3Pnkwq3vMVcLPh8-48">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="443" y="1600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-45" value="local_files - db_files and store result in new_files" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="399" y="1540" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.625;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-42" target="WqSGr3Pnkwq3vMVcLPh8-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-48" target="WqSGr3Pnkwq3vMVcLPh8-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-48" value="Get next item from new_files and store in current_file" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="393" y="1640" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-49" value="Upload file(current_file)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="393" y="1740" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-50" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="60" width="50" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-51" value="&lt;h1&gt;Preparation&lt;/h1&gt;&lt;div&gt;Connect to the database,&lt;/div&gt;&lt;div&gt;Scan the path to get all files and files in sub-folders,&lt;/div&gt;Get all files stored in the database&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="325" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-52" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="720" width="50" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-53" value="&lt;h1&gt;Downloading &amp;amp; Comparing Files&lt;br&gt;&lt;/h1&gt;&lt;p&gt;For loop which loops through every file stored in the database. &lt;br&gt;&lt;/p&gt;&lt;p&gt;If a file is only exists in the database, it&#39;s simply downloaded.&lt;/p&gt;&lt;p&gt;If a file exists in both the database and locally, then they are compared on multiple factors (see compare function)&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="790" width="190" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-54" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1200" width="50" height="780" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-55" value="&lt;h1&gt;Find files that are stored locally but not in the database&lt;br&gt;&lt;/h1&gt;&lt;p&gt;List of db_files and local_files are converted to sets. This allows them to be subtracted to find files that are in local_files but not in db_files quickly. These are looped through using a for loop and uploaded&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1460" width="190" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-60" target="WqSGr3Pnkwq3vMVcLPh8-48">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="1920" />
+              <mxPoint x="540" y="1670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-57" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WqSGr3Pnkwq3vMVcLPh8-56">
+          <mxGeometry x="-0.8731" y="-3" relative="1" as="geometry">
+            <mxPoint x="1" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="443" y="2010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-59" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WqSGr3Pnkwq3vMVcLPh8-58">
+          <mxGeometry x="-0.1111" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-60" value="Is current_file the last file in new_files" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="393" y="1870" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WqSGr3Pnkwq3vMVcLPh8-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WqSGr3Pnkwq3vMVcLPh8-49" target="WqSGr3Pnkwq3vMVcLPh8-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-1" value="Compare_File(file)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="10" width="106" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-3" target="YLw07gG2bM6b1DPWuptG-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-3" value="&lt;div&gt;DATABASE:&lt;/div&gt;&lt;div&gt;SELECT hash FROM test WHERE filename = {file}&#39;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1148" y="90" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-1" target="YLw07gG2bM6b1DPWuptG-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-5" value="Store result in db_hash" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="1158" y="190" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-6" value="Store returned value in local_hash" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="1158" y="380" width="102" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-7" value="Is local_hash == db_hash" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="480" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-6" target="YLw07gG2bM6b1DPWuptG-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1209" y="470" />
+              <mxPoint x="1210" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-9" value="&lt;div&gt;DATABASE: SELECT modified FROM test WHERE filename = {file}&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="620" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-10" value="Finish" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1063" y="1070" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-11" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="70" width="130" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-12" value="&lt;h1&gt;First check: Hash&lt;/h1&gt;&lt;div&gt;Retrieve the hash from the database and calculate the hash from the local file. If the files are identical, skip that file.&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="240" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-13" value="Calculate hash from local file" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1163" y="280" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.578;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-13" target="YLw07gG2bM6b1DPWuptG-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1217" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-5" target="YLw07gG2bM6b1DPWuptG-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.436;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-7" target="YLw07gG2bM6b1DPWuptG-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-17" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YLw07gG2bM6b1DPWuptG-16">
+          <mxGeometry x="0.4265" y="2" relative="1" as="geometry">
+            <mxPoint x="17" y="-38" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-18" value="Get time last modified from local file" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="730" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-9" target="YLw07gG2bM6b1DPWuptG-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-22" target="YLw07gG2bM6b1DPWuptG-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-21" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YLw07gG2bM6b1DPWuptG-20">
+          <mxGeometry x="-0.6" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-22" target="YLw07gG2bM6b1DPWuptG-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-19" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9UUW44Mx7iXhrC6X37-3-18">
+          <mxGeometry x="0.0683" y="-5" relative="1" as="geometry">
+            <mxPoint x="-10" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-22" value="Is local file hash &amp;gt; db file hash?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="830" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-18" target="YLw07gG2bM6b1DPWuptG-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-24" value="update_file(time, hash, binary, file)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="940" y="950" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-24" target="YLw07gG2bM6b1DPWuptG-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-26" value="download_file(file)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="1178" y="950" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-26" target="YLw07gG2bM6b1DPWuptG-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-28" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="600" width="130" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-29" value="&lt;h1&gt;Final Check and Decision&lt;br&gt;&lt;/h1&gt;Last modified timestamps from the local file and the DB file are compared. Depending on what&#39;s newer, the file is either updated - uploading the local file to the DB overwriting the old or downloaded overwriting the local file." style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="800" width="190" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="YLw07gG2bM6b1DPWuptG-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YLw07gG2bM6b1DPWuptG-7" target="YLw07gG2bM6b1DPWuptG-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1320" y="530" />
+              <mxPoint x="1320" y="1140" />
+              <mxPoint x="1113" y="1140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jJf6GQMVCGF61ZsP3pbs-2" target="jJf6GQMVCGF61ZsP3pbs-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-2" value="Get a list of all sub-folders and paths" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1370" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jJf6GQMVCGF61ZsP3pbs-7" target="jJf6GQMVCGF61ZsP3pbs-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-4" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jJf6GQMVCGF61ZsP3pbs-3">
+          <mxGeometry x="-0.15" y="2" relative="1" as="geometry">
+            <mxPoint x="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jJf6GQMVCGF61ZsP3pbs-7" target="jJf6GQMVCGF61ZsP3pbs-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-6" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jJf6GQMVCGF61ZsP3pbs-5">
+          <mxGeometry x="0.16" y="-2" relative="1" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-7" value="Is currentFile a folder?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1560" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-8" value="Create new local variable list called out" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="859.5" y="1280" width="141" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jJf6GQMVCGF61ZsP3pbs-8" target="jJf6GQMVCGF61ZsP3pbs-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-10" value="Set currentFile to the next file" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="875" y="1465" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jJf6GQMVCGF61ZsP3pbs-10" target="jJf6GQMVCGF61ZsP3pbs-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jJf6GQMVCGF61ZsP3pbs-13" target="jJf6GQMVCGF61ZsP3pbs-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-13" value="Scan folder" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1210" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jJf6GQMVCGF61ZsP3pbs-18" target="jJf6GQMVCGF61ZsP3pbs-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="1850" />
+              <mxPoint x="1010" y="1500" />
+              <mxPoint x="964" y="1500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-15" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jJf6GQMVCGF61ZsP3pbs-14">
+          <mxGeometry x="-0.9094" y="1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jJf6GQMVCGF61ZsP3pbs-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="1940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-17" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jJf6GQMVCGF61ZsP3pbs-16">
+          <mxGeometry x="-0.2594" relative="1" as="geometry">
+            <mxPoint x="-16" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-18" value="Is currentFile the last file?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1800" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-19" value="Append path of current file to out" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1700" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jJf6GQMVCGF61ZsP3pbs-19" target="jJf6GQMVCGF61ZsP3pbs-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="jJf6GQMVCGF61ZsP3pbs-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="765" y="1640" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-22" value="Scan folder" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1580" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-23" value="Add all items in returned list to out" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1710" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jJf6GQMVCGF61ZsP3pbs-23" target="jJf6GQMVCGF61ZsP3pbs-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jJf6GQMVCGF61ZsP3pbs-25" value="Return out" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1940" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-1" value="Download_File(file)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1210" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="stiLWskLmDJfiQo-EzaC-1" target="stiLWskLmDJfiQo-EzaC-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="stiLWskLmDJfiQo-EzaC-4" target="stiLWskLmDJfiQo-EzaC-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-4" value="&lt;div&gt;DATABASE:&lt;/div&gt;&lt;div&gt;SELECT content FROM test WHERE filename = {file}&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="1290" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="stiLWskLmDJfiQo-EzaC-1" target="stiLWskLmDJfiQo-EzaC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-6" value="Store binary database result in content" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1390" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-7" value="Create new empty file with correct path" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="1570" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-8" value="Open newly created file and write binary data stored in content" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="1660" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-9" value="Does file exist in path?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="1490" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="stiLWskLmDJfiQo-EzaC-6" target="stiLWskLmDJfiQo-EzaC-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="stiLWskLmDJfiQo-EzaC-9" target="stiLWskLmDJfiQo-EzaC-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-12" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="stiLWskLmDJfiQo-EzaC-11">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="stiLWskLmDJfiQo-EzaC-7" target="stiLWskLmDJfiQo-EzaC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="stiLWskLmDJfiQo-EzaC-9" target="stiLWskLmDJfiQo-EzaC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stiLWskLmDJfiQo-EzaC-15" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="stiLWskLmDJfiQo-EzaC-14">
+          <mxGeometry x="0.125" y="2" relative="1" as="geometry">
+            <mxPoint x="-22" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="70U1rKWoZpjblrbmrPHu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="70U1rKWoZpjblrbmrPHu-2" target="70U1rKWoZpjblrbmrPHu-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="70U1rKWoZpjblrbmrPHu-2" value="Start(time, hash, binary, file)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="1770" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="70U1rKWoZpjblrbmrPHu-3" value="&lt;div&gt;DATABASE:&lt;/div&gt;UPDATE user SET modified = {time}, hash = {hash}, content = {binary}, WHERE filename = {file}" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1335" y="1860" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="70U1rKWoZpjblrbmrPHu-4" value="Finish" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1395" y="1990" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="70U1rKWoZpjblrbmrPHu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="70U1rKWoZpjblrbmrPHu-3" target="70U1rKWoZpjblrbmrPHu-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="70U1rKWoZpjblrbmrPHu-6" value="&lt;h1&gt;Updates an existing file in the DB&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Updates the file content in binary form, whilst updating the time modified, and hash&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="1830" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="sgy7QiebNZ_wxomoBDYg-1" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="1770" width="50" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="9UUW44Mx7iXhrC6X37-3-2" target="9UUW44Mx7iXhrC6X37-3-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-2" value="Upload(file)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="10" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="9UUW44Mx7iXhrC6X37-3-4" target="9UUW44Mx7iXhrC6X37-3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-4" value="Get time modified from file" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1645" y="90" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="9UUW44Mx7iXhrC6X37-3-6" target="9UUW44Mx7iXhrC6X37-3-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-6" value="Store time modified in var timestamp" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="1637.5" y="190" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9UUW44Mx7iXhrC6X37-3-8" target="9UUW44Mx7iXhrC6X37-3-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-8" value="Calculate MD5 hash of file" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1645" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-9" value="Store hash in var fileHash" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="1645" y="400" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9UUW44Mx7iXhrC6X37-3-11" target="9UUW44Mx7iXhrC6X37-3-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-11" value="Get binary content for file" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1645" y="510" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9UUW44Mx7iXhrC6X37-3-9" target="9UUW44Mx7iXhrC6X37-3-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-13" value="&lt;div&gt;DATABASE:&lt;br&gt;&lt;/div&gt;&lt;div&gt;INSERT INTO test value(&#39;file&#39;, &#39;timestamp&#39;, &#39;fileHash&#39;, &#39;content&#39;&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="720" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="9UUW44Mx7iXhrC6X37-3-15" target="9UUW44Mx7iXhrC6X37-3-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-15" value="Store binary data in var content" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="1645" y="610" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-16" value="&lt;h1&gt;Uploads a new file to the db&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Very similar to the update function but it adds to the database rather than replacing&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="360" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="9UUW44Mx7iXhrC6X37-3-17" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="10" width="50" height="820" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
