@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-14T13:29:22.234Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="49dCkq8MWrgc-eovovJg" version="22.1.0" type="device" pages="7">
+<mxfile host="app.diagrams.net" modified="2023-11-21T16:39:07.278Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="UZUl5rdyQi4O0OrUGKXS" version="22.1.3" type="github" pages="7">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Main">
-    <mxGraphModel dx="882" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2074" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -237,7 +237,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="KonCliAG_XEQTQLzB4f6" name="Compare">
-    <mxGraphModel dx="1709" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2901" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -354,7 +354,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="JSWpdRI4ZFGYBcIDf-Ox" name="Scan Folder">
-    <mxGraphModel dx="882" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2074" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -450,7 +450,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="zDUDngkcDKV4RmGZN4Hy-1" value="Return out" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="380" y="740" width="100" height="60" as="geometry" />
+          <mxGeometry x="390" y="740" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
